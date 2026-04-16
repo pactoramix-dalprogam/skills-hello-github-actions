@@ -37,7 +37,7 @@ jobs:
             ${{ env.IMAGE_NAME }}:${{ github.sha }}
             ${{ env.IMAGE_NAME }}:latest
           cache-from: type=gha
-          ccache-to: type=gha,mode=max
+          cache-to: type=gha,mode=max
 
       - name: Placeholder
         run: echo "TODO - implement Docker build with caching"
