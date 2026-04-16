@@ -4,7 +4,7 @@
 FROM node:20-alpine AS builder
 WORKDIR /app
 
-# ❌ Copies EVERYTHING at once — any code change invalidates npm ci
+# ❌ Copies EVERYTHING at once — any code change invalidates npm ci.
 COPY . .
 RUN npm ci
 RUN npm run build
