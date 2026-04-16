@@ -1,5 +1,5 @@
 import express from "express";
-
+// Create an Express application
 const app = express();
 const port = 3000;
 
